@@ -776,7 +776,7 @@ impl Handler<Status> for ClientActor {
                 network_info: self.network_info.clone().into(),
                 sync_status: self.client.sync_status.as_variant_name().to_string(),
                 current_head_status: self.client.chain.head()?.clone().into(),
-                current_header_head_status:  self.client.chain.header_head()?.clone().into(),
+                current_header_head_status: self.client.chain.header_head()?.clone().into(),
             })
         } else {
             None
